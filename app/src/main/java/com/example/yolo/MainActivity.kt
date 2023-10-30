@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
             val bitmap = BitmapFactory.decodeStream(assets.open("image.png"));
-            val moduleFilePath = assetFilePath(this, "yolov5s.pt");
+            val moduleFilePath = assetFilePath(this, "best.torchscript.ptl")
             val module = Module.load(moduleFilePath)
 
             val expectedWidth = 320
